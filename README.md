@@ -1,4 +1,4 @@
-# gameOfThree
+# GameOfThree
 A game with two independent units, players communicating using Restful API
 
 # Description
