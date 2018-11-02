@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Game of Three</title>
+</head>
+<body ng-app="gameApp">
+    <div id="gameBoard" ng-controller="gameCtrl">
+        <div ng-hide="game.gameLose || game.gameWin">
+            <div ng-hide="game.gameHold" class="gameButtons">
+                        <button ng-click="newgame()" ng-hide="game.gameStart">New Game</button>
+            </div>
+            <div class="gameStarted" ng-show="gameAlreadyStarted">
+                <p>There game is already started, come back later</p>
+            </div>
+
+            <div class="gamePanel" ng-show="game.gameHold">
+                <div class="gameInner">
+                    <p class="currentNumber">
+                        {{ game.theNumber }}
+                        
+                    </p>
+                    <p class="divideError" ng-show="divideError">This number is not multiples for 3</p>
+                    <div ng-show="game.playOn" class="gameForm">
+                        <button ng-click="sendNumber(1)">+1</button>
+                        <button ng-click="sendNumber(0)">0</button>
+                        <button ng-click="sendNumber(-1)">-1</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ng-show="game.gameLose" class="gameLose">
+            <p>Unfortunately, you lost the Game :(</p>
+        </div>
+        <div ng-show="game.gameWin" class="gameWin">
+            <p>Congrats, you won :)</p>
+        </div>
+
+    </div>
+</body>
+</html>

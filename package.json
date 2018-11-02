@@ -1,0 +1,30 @@
+{
+  "name": "gameofthree",
+  "version": "1.3.0",
+  "description": "Game with two independent units, players communicating using Restful API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NourHabib/gameOfThree.git"
+  },
+  "keywords": [
+    "Restful",
+    "API",
+    "Express",
+    "NodeJs",
+    "AngularJs"
+  ],
+  "author": "Nour Habib",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NourHabib/gameOfThree/issues"
+  },
+  "homepage": "https://github.com/NourHabib/gameOfThree#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

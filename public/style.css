@@ -1,0 +1,79 @@
+.gameButtons button {
+    display:block;
+    color:#fff;
+    background:#74c7c1;
+    border:none;
+    padding:10px 20px;
+    font-family:sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 2px #F2F2F5;
+    -webkit-transition: box-shadow 500ms ease-out;
+  -moz-transition: box-shadow 500ms ease-out;
+  -o-transition: box-shadow 500ms ease-out;
+  transition: box-shadow 500ms ease-out;
+}
+.gameButtons button:hover{
+    box-shadow: 1px 1px 9px 10px #F2F2F5;
+}
+.gameStarted,.divideError  {
+    text-align:center;
+    padding:5px 10px;
+    color:#fff;
+    font-family:sans-serif;
+    background:#e8a0a0;
+    max-width:400px;
+    display:block;
+    margin:0 auto;
+}
+.gameInner{
+  display:block;
+  margin:40px auto;
+  text-align:center;
+}
+.currentNumber{
+    text-align:center;
+    padding:10px;
+    margin:40px auto;
+    display:block;
+    max-width:150px;
+    font-size:30px;
+    line-height:30px;
+    font-family:sans-serif;
+    border-radius:10px;
+    background:#a1d0c5;
+    color:#fff;
+    border:solid 1px #4f8e7f;
+}
+.gamePanel p{
+    margin: 10px auto;
+}
+.gameForm button{
+  background:#baf17a;
+  border:none;
+  border:none;
+    padding:10px 20px;
+    font-family:sans-serif;
+    text-transform: uppercase;
+    color:#fff;
+    border-radius:10px;
+    border:solid 1px #3b6b32;
+    cursor:pointer;
+    font-size:15px;
+}
+.gameWin,.gameLose{
+    text-align:center;
+      padding:5px 10px;
+      color:#fff;
+      font-family:sans-serif;
+      background:#ade8a0;
+      max-width:400px;
+      display:block;
+      margin:50px auto;
+      font-size:30px;
+  }
+  .gameLose{
+   background:#bb1d37;
+  }
