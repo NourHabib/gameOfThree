@@ -8,6 +8,8 @@ The same rules are applied until one player reaches the number 1 and become the 
 
 # Conditions applied
 ● Each player runs on its own (independent programs, two browsers, web‐workers,...).
+
 ● Communication via an API (REST).
+
 ● A player may not be available when the other one starts.
 
